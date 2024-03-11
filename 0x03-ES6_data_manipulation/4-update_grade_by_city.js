@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity(students, city, newGrades) {
+export default function updateStudentGradeByCity (students, city, newGrades) {
   if (students instanceof Array) {
     return students
       .filter((student) => student.location === city)
@@ -10,8 +10,8 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
           grade:
             newGrades
               .filter((grade) => grade.studentId === student.id)
-              .reduce((acum, current) => acum.grade ?? current.grade, "N/A") ??
-            "N/A",
+              .reduce((acum, current) => acum.grade ?? current.grade, 'N/A') ??
+            'N/A'
         };
       });
   }
