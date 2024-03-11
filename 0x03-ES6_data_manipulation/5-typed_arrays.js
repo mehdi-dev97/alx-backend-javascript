@@ -7,12 +7,12 @@
  * @returns {DataView} buffer
  */
 
-export default function createInt8TypedArray(length, position, value) {
+export default function createInt8TypedArray (length, position, value) {
   if (position >= length) {
-    throw new Error("Position outside range");
+    throw new Error('Position outside range');
   }
-  if (typeof value !== "number") {
-    throw new TypeError("Value most be a number");
+  if (typeof value !== 'number') {
+    throw new TypeError('Value most be a number');
   }
   const buffer = new DataView(new ArrayBuffer(length), 0, length);
   buffer.setInt8(position, value);
