@@ -8,7 +8,7 @@
  * @returns
  */
 
-export default function getListStudentIds(students) {
+export default function getListStudentIds (students) {
   if (!students instanceof Array) {
     return [];
   }

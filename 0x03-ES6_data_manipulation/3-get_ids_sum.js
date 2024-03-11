@@ -1,4 +1,4 @@
-export default function getStudentIdsSum(students) {
+export default function getStudentIdsSum (students) {
   if (students instanceof Array) {
     return students.reduce(
       (accumulator, currentValue) =>
