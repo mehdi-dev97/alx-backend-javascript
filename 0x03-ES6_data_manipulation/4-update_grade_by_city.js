@@ -1,5 +1,5 @@
 export default function updateStudentGradeByCity (students, city, newGrades) {
-  if (students instanceof Array) {
+  if ((students instanceof Array)) {
     return students
       .filter((student) => student.location === city)
       .map((student) => {

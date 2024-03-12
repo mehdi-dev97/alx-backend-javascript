@@ -6,7 +6,7 @@
  */
 
 export default function setFromArray (array) {
-  if (!array instanceof Array) {
+  if (!(array instanceof Array)) {
     throw new Error('Argument most be an array');
   }
   return new Set(array);
