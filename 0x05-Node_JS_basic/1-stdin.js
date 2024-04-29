@@ -1,12 +1,10 @@
-const process = require('node:process');
-
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('readable', () => {
-  const fullName = process.stdin.read();
+  const chunk = process.stdin.read();
 
-  if (fullName) {
-    process.stdout.write(`Your name is: ${fullName}`);
+  if (chunk) {
+    process.stdout.write(`Your name is: ${chunk}`);
   }
 });
 
